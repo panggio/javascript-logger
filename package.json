@@ -1,0 +1,24 @@
+{
+  "name": "javascript-logger",
+  "version": "1.0.0",
+  "description": "Conditional javascript logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panggio/javascript-logger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panggio/javascript-logger/issues"
+  },
+  "homepage": "https://github.com/panggio/javascript-logger#readme",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  }
+}
