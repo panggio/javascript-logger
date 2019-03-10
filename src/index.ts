@@ -1,12 +1,12 @@
 export abstract class DebugLogger {
-    private static LOGGER_KEY: string = 'myDebug';
-  
-    private static LOG_ENABLED: boolean = true;
-  
-    public static log(message?: any, ...optionalParams: any[]): void {
-        if (this.LOG_ENABLED) {
-            console.log(message, ...optionalParams);
-        }
+  public static log(message?: any, ...optionalParams: any[]): void {
+    if (this.LOG_ENABLED) {
+      /* tslint:disable */
+      console.log(message, ...optionalParams);
     }
   }
-  
+
+  private static LOGGER_KEY: string = 'jsDebug';
+
+  private static LOG_ENABLED: boolean = true;
+}
