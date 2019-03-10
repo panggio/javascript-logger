@@ -8,5 +8,6 @@ export abstract class Logger {
 
   private static LOGGER_KEY: string = 'jsDebug';
 
-  private static LOG_ENABLED: boolean = true;
+  private static LOG_ENABLED: boolean = 
+          localStorage.getItem(Logger.LOGGER_KEY) !== null;          
 }

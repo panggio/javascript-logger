@@ -1,6 +1,6 @@
 {
   "name": "javascript-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Conditional javascript logger",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,7 +22,10 @@
     "type": "git",
     "url": "git+https://github.com/panggio/javascript-logger.git"
   },
-  "keywords": ["javascript-logger", "arup-logger"],
+  "keywords": [
+    "javascript-logger",
+    "arup-logger"
+  ],
   "author": "Pablo Godino",
   "license": "ISC",
   "bugs": {
