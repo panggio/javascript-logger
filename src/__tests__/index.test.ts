@@ -7,7 +7,6 @@ describe('Logger', () => {
 
   it('Should log', () => {
     jest.spyOn(global.console, 'log');
-    localStorage.setItem('jsDebug', '1');
 
     /* tslint:disable */
     Logger.log("Test");

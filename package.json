@@ -1,6 +1,6 @@
 {
   "name": "javascript-logger",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Conditional javascript logger",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -24,7 +24,10 @@
   },
   "keywords": [
     "javascript-logger",
-    "arup-logger"
+    "arup-logger",
+    "logger",
+    "typescript-logger",
+    "conditional-logger"
   ],
   "author": "Pablo Godino",
   "license": "ISC",

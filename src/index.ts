@@ -9,5 +9,7 @@ export abstract class Logger {
   private static LOGGER_KEY: string = 'jsDebug';
 
   private static LOG_ENABLED: boolean = 
-          localStorage.getItem(Logger.LOGGER_KEY) !== null;          
+    (location && location.hostname == 'localhost') ||
+    (localStorage && localStorage.getItem(Logger.LOGGER_KEY) !== null) ||
+    (location && new URLSearchParams(window.location.search).has(Logger.LOGGER_KEY));          
 }
