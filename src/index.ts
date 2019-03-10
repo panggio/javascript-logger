@@ -1,4 +1,4 @@
-export abstract class DebugLogger {
+export abstract class Logger {
   public static log(message?: any, ...optionalParams: any[]): void {
     if (this.LOG_ENABLED) {
       /* tslint:disable */
