@@ -1,10 +1,17 @@
-export abstract class Logger {
+export class Logger {
   public static log(message?: any, ...optionalParams: any[]): void {
     if (this.LOG_ENABLED) {
       /* tslint:disable */
       console.log(message, ...optionalParams);
     }
   }
+
+  public static trace(message?: any, ...optionalParams: any[]): void {
+    if (this.LOG_ENABLED) {
+      /* tslint:disable */
+      console.trace(message, ...optionalParams);
+    }
+  }  
 
   private static LOGGER_KEY: string = 'jsDebug';
 
