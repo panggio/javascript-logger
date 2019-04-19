@@ -16,17 +16,17 @@ Add 'jsDebug' to your url querystring
 ## Enabling logging/tracing by localStorage
 Add 'jsDebug' key to the localstorage object
 ```ts
-localStorage.setItem("jsDebug", 1) // To enable logging
-localStorage.setItem("jsDebug", 1) // To enable tracing
-localStorage.setItem("jsDebug", 1) // To enable logging and tracing
+localStorage.setItem("jsDebug", "1") // To enable logging
+localStorage.setItem("jsDebug", "2") // To enable tracing
+localStorage.setItem("jsDebug", "3") // To enable logging and tracing
 
 
 ```
 
 ## jsDebug values
-jsDebug = 1 enables displaying of logs in the console window
-jsDebug = 2 enables displaying of trace commands in the console window
-jsDebug = 3 enables displaying of log and trace commands in the console window
+* jsDebug = 1 enables displaying of logs in the console window
+* jsDebug = 2 enables displaying of trace commands in the console window
+* jsDebug = 3 enables displaying of log and trace commands in the console window
 
 ## TypeScript
 ```ts
