@@ -1,6 +1,6 @@
 {
   "name": "javascript-logger",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Conditional javascript logger",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
