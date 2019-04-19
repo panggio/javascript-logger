@@ -9,9 +9,9 @@ npm i javascript-logger --save
 ## Enabling logging/tracing by querystring
 Add 'jsDebug' to your url querystring
 
-To enable logging: http://localhost?jsDebug=1
-To enable tracing: http://localhost?jsDebug=2
-To enable logging and tracing: http://localhost?jsDebug=3
+* To enable logging: http://localhost?jsDebug=1
+* To enable tracing: http://localhost?jsDebug=2
+* To enable logging and tracing: http://localhost?jsDebug=3
 
 ## Enabling logging/tracing by localStorage
 Add 'jsDebug' key to the localstorage object
