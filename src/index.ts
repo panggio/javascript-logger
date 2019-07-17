@@ -62,9 +62,15 @@ export class Logger {
   private static validaQueryString(consoleActionCompare: string): boolean {
     return (
       location &&
-      new URLSearchParams(window.location.search).has(Logger.LOGGER_KEY) &&
-      (new URLSearchParams(window.location.search).get(Logger.LOGGER_KEY) === consoleActionCompare ||
-        new URLSearchParams(window.location.search).get(Logger.LOGGER_KEY) === '3')
+      (Logger.getQueryString(Logger.LOGGER_KEY, window.location.search) === consoleActionCompare ||
+        Logger.getQueryString(Logger.LOGGER_KEY, window.location.search) === '3')
     );
+  }
+
+  private static getQueryString(field: string, url?: string): string {
+    const href = url ? url : window.location.href;
+    const reg = new RegExp('[?&]' + field + '=([^&#]*)', 'i');
+    const paramString = reg.exec(href);
+    return paramString ? paramString[1] : '';
   }
 }
