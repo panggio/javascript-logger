@@ -12,5 +12,4 @@ export declare class Logger {
     private static validateLocalHost;
     private static validateLocalStorage;
     private static validaQueryString;
-    private static getQueryString;
 }
